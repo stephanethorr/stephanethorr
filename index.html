@@ -441,14 +441,11 @@
         const projectCards = Array.from(document.querySelectorAll('.project-card'));
         const totalProjects = projectCards.length;
 
-        // Cloner les projets pour créer un effet infini
         function setupInfiniteCarousel() {
-            // Cloner tous les projets et les ajouter à la fin
             projectCards.forEach(card => {
                 const clone = card.cloneNode(true);
                 projectsContainer.appendChild(clone);
             });
-            // Cloner tous les projets et les ajouter au début
             projectCards.slice().reverse().forEach(card => {
                 const clone = card.cloneNode(true);
                 projectsContainer.insertBefore(clone, projectsContainer.firstChild);
@@ -457,7 +454,7 @@
 
         function updateCarousel() {
             const allCards = document.querySelectorAll('.project-card');
-            const offset = (currentProject + totalProjects) * -470; // 450px width + 20px gap
+            const offset = (currentProject + totalProjects) * -470;
             projectsContainer.style.transform = `translateX(calc(50% + ${offset}px - 225px))`;
             
             allCards.forEach((project, index) => {
@@ -465,7 +462,6 @@
                 const adjustedIndex = index % totalProjects;
                 const currentAdjusted = currentProject % totalProjects;
                 
-                // Le projet au centre
                 if (adjustedIndex === currentAdjusted) {
                     project.classList.add('active');
                 } else {
@@ -478,7 +474,6 @@
             currentProject = (currentProject + 1);
             updateCarousel();
             
-            // Reset position si on va trop loin
             if (currentProject >= totalProjects) {
                 setTimeout(() => {
                     projectsContainer.style.transition = 'none';
@@ -496,7 +491,6 @@
             currentProject = (currentProject - 1);
             updateCarousel();
             
-            // Reset position si on va trop en arrière
             if (currentProject < 0) {
                 setTimeout(() => {
                     projectsContainer.style.transition = 'none';
@@ -514,5 +508,4 @@
         updateCarousel();
     </script>
 </body>
-
 </html>
