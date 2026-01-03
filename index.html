@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Thorr Stéphane</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">Thorr Stéphane</div>
+            <div class="nav-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#competences">Compétences</a>
+                <a href="#projets">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Développeur Web</h1>
+                <h2 class="hero-subtitle">BTS SIO SLAM</h2>
+                <p class="hero-description">Passionné par le développement d'applications et la création de solutions innovantes</p>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="section">
+        <div class="container">
+            <h2 class="section-title">À propos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Actuellement en BTS SIO option SLAM, je suis passionné par le développement informatique 
+                        et la création d'applications web. Mon parcours m'a permis d'acquérir des compétences 
+                        solides en programmation et en gestion de projets.
+                    </p>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span class="info-label">Formation</span>
+                        <span class="info-value">BTS SIO SLAM</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Localisation</span>
+                        <span class="info-value">Colmar</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Email</span>
+                        <span class="info-value">stephanethorr@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Langages</h3>
+                    <ul>
+                        <li>HTML / CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                        <li>Laravel</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Outils</h3>
+                    <ul>
+                        <li>Git / GitHub</li>
+                        <li>VS Code</li>
+                        <li>vmware</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Travail en équipe</li>
+                        <li>Gestion de projet</li>
+                        <li>Résolution de problèmes</li>
+                        <li>Autonomie</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section">
+        <div class="container">
+            <h2 class="section-title">Projets</h2>
+            <div class="projects-carousel-container">
+                <button class="carousel-btn carousel-btn-prev" onclick="previousProject()">‹</button>
+                <div class="projects-carousel">
+                    <div class="carousel-track">
+                        <!-- Projet 1 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">[Image du projet]</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">[Nom du projet 1]</h3>
+                                <p class="project-description">
+                                    [Description courte du projet, technologies utilisées, objectifs...]
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projet 2 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">[Image du projet]</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">[Nom du projet 2]</h3>
+                                <p class="project-description">
+                                    [Description courte du projet, technologies utilisées, objectifs...]
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">PHP</span>
+                                    <span class="tag">MySQL</span>
+                                    <span class="tag">Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projet 3 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">[Image du projet]</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">[Nom du projet 3]</h3>
+                                <p class="project-description">
+                                    [Description courte du projet, technologies utilisées, objectifs...]
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">API</span>
+                                    <span class="tag">Node.js</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projet 4 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">[Image du projet]</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">[Nom du projet 4]</h3>
+                                <p class="project-description">
+                                    [Description courte du projet, technologies utilisées, objectifs...]
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Django</span>
+                                    <span class="tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projet 5 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">[Image du projet]</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">[Nom du projet 5]</h3>
+                                <p class="project-description">
+                                    [Description courte du projet, technologies utilisées, objectifs...]
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">C#</span>
+                                    <span class="tag">.NET</span>
+                                    <span class="tag">WPF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn-next" onclick="nextProject()">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Restons en contact</h3>
+                    <p>N'hésitez pas à me contacter pour toute opportunité ou collaboration.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:stephanethorr@gmail.com">stephanethorr@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/st%C3%A9phane-thorr-4575a9293/" target="_blank">linkedin.com/in/stéphane-thorr</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">GitHub</span>
+                            <a href="https://github.com/razertemps" target="_blank">github.com/razertemps</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 THORR Stéphane. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentProject = 0;
+        const projectsContainer = document.querySelector('.carousel-track');
+        const projectCards = Array.from(document.querySelectorAll('.project-card'));
+        const totalProjects = projectCards.length;
+
+        // Cloner les projets pour créer un effet infini
+        function setupInfiniteCarousel() {
+            // Cloner tous les projets et les ajouter à la fin
+            projectCards.forEach(card => {
+                const clone = card.cloneNode(true);
+                projectsContainer.appendChild(clone);
+            });
+            // Cloner tous les projets et les ajouter au début
+            projectCards.slice().reverse().forEach(card => {
+                const clone = card.cloneNode(true);
+                projectsContainer.insertBefore(clone, projectsContainer.firstChild);
+            });
+        }
+
+        function updateCarousel() {
+            const allCards = document.querySelectorAll('.project-card');
+            const offset = (currentProject + totalProjects) * -470; // 450px width + 20px gap
+            projectsContainer.style.transform = `translateX(calc(50% + ${offset}px - 225px))`;
+            
+            allCards.forEach((project, index) => {
+                project.classList.remove('active', 'side');
+                const adjustedIndex = index % totalProjects;
+                const currentAdjusted = currentProject % totalProjects;
+                
+                // Le projet au centre
+                if (adjustedIndex === currentAdjusted) {
+                    project.classList.add('active');
+                } else {
+                    project.classList.add('side');
+                }
+            });
+        }
+
+        function nextProject() {
+            currentProject = (currentProject + 1);
+            updateCarousel();
+            
+            // Reset position si on va trop loin
+            if (currentProject >= totalProjects) {
+                setTimeout(() => {
+                    projectsContainer.style.transition = 'none';
+                    currentProject = 0;
+                    const offset = totalProjects * -470;
+                    projectsContainer.style.transform = `translateX(calc(50% + ${offset}px - 225px))`;
+                    setTimeout(() => {
+                        projectsContainer.style.transition = 'transform 0.5s ease';
+                    }, 50);
+                }, 500);
+            }
+        }
+
+        function previousProject() {
+            currentProject = (currentProject - 1);
+            updateCarousel();
+            
+            // Reset position si on va trop en arrière
+            if (currentProject < 0) {
+                setTimeout(() => {
+                    projectsContainer.style.transition = 'none';
+                    currentProject = totalProjects - 1;
+                    const offset = (totalProjects + totalProjects - 1) * -470;
+                    projectsContainer.style.transform = `translateX(calc(50% + ${offset}px - 225px))`;
+                    setTimeout(() => {
+                        projectsContainer.style.transition = 'transform 0.5s ease';
+                    }, 50);
+                }, 500);
+            }
+        }
+
+        setupInfiniteCarousel();
+        updateCarousel();
+    </script>
+</body>
+</html>
