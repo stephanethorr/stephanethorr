@@ -641,6 +641,80 @@ nav .container {
     transform: translateX(5px);
 }
 
+/* Épreuves Styles */
+.epreuves-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.epreuve-card {
+    background: var(--color-card);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    transition: all 0.3s;
+}
+
+.epreuve-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.2);
+}
+
+.epreuve-header {
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(59, 130, 246, 0.15));
+    border-bottom: 2px solid rgba(124, 58, 237, 0.3);
+}
+
+.epreuve-title {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.epreuve-content {
+    padding: 30px;
+}
+
+.epreuve-intro {
+    color: var(--color-text-dim);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+.epreuve-section {
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-left: 3px solid var(--color-primary);
+}
+
+.epreuve-subtitle {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.epreuve-section p {
+    color: var(--color-text-dim);
+    line-height: 1.7;
+}
+
+.epreuve-conclusion {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(124, 58, 237, 0.05);
+    border-radius: 8px;
+    color: var(--color-text-dim);
+    line-height: 1.7;
+    font-style: italic;
+    border-left: 3px solid var(--color-primary);
+}
+
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -746,6 +820,15 @@ footer p {
 
     .veille-grid {
         grid-template-columns: 1fr;
+    }
+
+    .epreuves-container {
+        gap: 30px;
+    }
+
+    .epreuve-header,
+    .epreuve-content {
+        padding: 20px;
     }
 
     .projects-carousel-container {
