@@ -554,6 +554,93 @@ nav .container {
     font-size: 0.85rem;
 }
 
+/* Veille Technologique Styles */
+.veille-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.veille-card {
+    background: var(--color-card);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    transition: all 0.3s;
+}
+
+.veille-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+}
+
+.veille-header {
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(59, 130, 246, 0.1));
+    border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.veille-title {
+    font-size: 1.3rem;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.veille-date {
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.veille-content {
+    padding: 25px;
+}
+
+.veille-description {
+    color: var(--color-text-dim);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.veille-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.veille-tag {
+    background: rgba(124, 58, 237, 0.2);
+    color: var(--color-primary);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+}
+
+.veille-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.veille-link:hover {
+    color: var(--color-secondary);
+}
+
+.veille-link::after {
+    content: '→';
+    margin-left: 8px;
+    transition: transform 0.3s;
+}
+
+.veille-link:hover::after {
+    transform: translateX(5px);
+}
+
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -655,6 +742,10 @@ footer p {
     .cv-content {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .veille-grid {
+        grid-template-columns: 1fr;
     }
 
     .projects-carousel-container {
