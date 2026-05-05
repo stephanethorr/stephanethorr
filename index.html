@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="container">
             <div class="logo">Thorr Stéphane</div>
@@ -24,7 +23,6 @@
         </div>
     </nav>
 
-    <!-- Section Accueil -->
     <section id="accueil" class="hero">
         <div class="container">
             <div class="hero-content">
@@ -39,7 +37,6 @@
         </div>
     </section>
 
-    <!-- Section À propos -->
     <section id="apropos" class="section">
         <div class="container">
             <h2 class="section-title">À propos</h2>
@@ -69,12 +66,10 @@
         </div>
     </section>
 
-    <!-- Section CV -->
     <section id="cv" class="section section-dark">
         <div class="container">
             <h2 class="section-title">Curriculum Vitae</h2>
             <div class="cv-content">
-                <!-- Colonne Gauche -->
                 <div class="cv-sidebar">
                     <div class="cv-section">
                         <h3 class="cv-section-title">Coordonnées</h3>
@@ -141,14 +136,13 @@
                         <h3 class="cv-section-title">Loisirs</h3>
                         <ul class="cv-list">
                             <li>🎮 Jeux vidéos</li>
-                            <li>🏀 Basket avec mes amis</li>
+                            <li>🏐 Volley</li>
                             <li>📚 Lecture</li>
                             <li>💪 Salle de sport</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Colonne Droite -->
                 <div class="cv-main">
                     <div class="cv-section">
                         <h3 class="cv-section-title">Formation et Diplômes</h3>
@@ -158,7 +152,7 @@
                                 <div class="cv-timeline-content">
                                     <h4>BTS SIO (Services Informatiques aux Organisations)</h4>
                                     <p class="cv-timeline-subtitle">Option SLAM</p>
-                                    <p>Je suis actuellement à la recherche d'un stage pour confirmer ma première année de BTS SIO.</p>
+                                    <p>Je suis actuellement en deuxième année de BTS SIO.</p>
                                 </div>
                             </div>
                             <div class="cv-timeline-item">
@@ -190,6 +184,18 @@
                     <div class="cv-section">
                         <h3 class="cv-section-title">Expériences Professionnelles</h3>
                         <div class="cv-timeline">
+                            <div class="cv-timeline-item">
+                                <div class="cv-timeline-date">Stage</div>
+                                <div class="cv-timeline-content">
+                                    <h4>Stage Développement Web - EL2I Informatique (Mulhouse)</h4>
+                                    <ul>
+                                        <li>Refonte graphique du site de gestion des CERFA et des devis</li>
+                                        <li>Refactoring et modification de l'ensemble du code interne pour améliorer sa lisibilité</li>
+                                        <li>Intégration de nouvelles fonctionnalités visuelles</li>
+                                        <li>Mise en place de nouvelles mesures de sécurité</li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="cv-timeline-item">
                                 <div class="cv-timeline-date">Stage 2025</div>
                                 <div class="cv-timeline-content">
@@ -242,7 +248,6 @@
         </div>
     </section>
 
-    <!-- Section Compétences -->
     <section id="competences" class="section">
         <div class="container">
             <h2 class="section-title">Compétences</h2>
@@ -287,100 +292,82 @@
         </div>
     </section>
 
-    <!-- Section Projets -->
     <section id="projets" class="section section-dark">
         <div class="container">
-            <h2 class="section-title">Projets</h2>
+            <h2 class="section-title">Projets Personnels</h2>
             <div class="projects-carousel-container">
                 <button class="carousel-btn carousel-btn-prev" onclick="previousProject()">‹</button>
                 <div class="projects-carousel">
                     <div class="carousel-track">
-                        <!-- Projet 1 -->
                         <div class="project-card">
                             <div class="project-image">
-                                <div class="project-placeholder">[Image du projet]</div>
+                                <div class="project-placeholder">HiddenBase</div>
                             </div>
                             <div class="project-content">
-                                <h3 class="project-title">[Nom du projet 1]</h3>
+                                <h3 class="project-title">HiddenBase : The Heart Bearer</h3>
                                 <p class="project-description">
-                                    [Description courte du projet, technologies utilisées, objectifs...]
+                                    Développement complet d'un plugin de mini-jeu Minecraft (Team vs Team). Les joueurs doivent construire une base secrète et protéger un bloc vital. Ce projet intègre des systèmes avancés : génération asynchrone de zone d'attente avec filtrage intelligent des biomes, algorithme de respawn dynamique anti-glitch (scan vertical de la map), gestion de phases de jeu synchronisées et sécurisation poussée des inventaires et de la physique des blocs.
                                 </p>
                                 <div class="project-tags">
+                                    <span class="tag">Java</span>
+                                    <span class="tag">Paper / Spigot API</span>
+                                    <span class="tag">Async Tasks</span>
+                                    <span class="tag">Game Design</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">CorePlugin SMP</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">CorePlugin SMP - Minecraft 1.21</h3>
+                                <p class="project-description">
+                                    Développement d'un plugin central sur mesure pour un serveur Minecraft. Conception d'une architecture modulaire intégrant une économie dynamique, des menus interactifs (GUI) compatibles Resource Pack, un système de grades temporaires et des caisses de récompenses avec hologrammes interactifs.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Java</span>
+                                    <span class="tag">Paper API</span>
+                                    <span class="tag">YAML</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">NewOre</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">NewOre - Game Design & Plugin Java</h3>
+                                <p class="project-description">
+                                    Développement d'un plugin de minerais personnalisés sous Bukkit/Spigot. Gestion de la génération procédurale, des recettes de forge complexes et des métadonnées (NBT). Inclus un système de défense intelligente réduisant les dégâts de 90% contre les PNJ, tout en restant compétitif en PvP grâce à une logique de pénétration d'armure graduelle.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">JAVA</span>
+                                    <span class="tag">SPIGOT / BUKKIT</span>
+                                    <span class="tag">JSON</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">DuelMaster</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">DuelMaster: Collection & Deck Hub</h3>
+                                <p class="project-description">
+									Plateforme Full-Stack synchronisant une collection de cartes Yu-Gi-Oh! entre un serveur Minecraft (via un plugin dédié) et une interface web de gestion. Le système exploite l'API REST externe Yu-Gi-Oh! Pro Deck pour générer dynamiquement le contenu lors des ouvertures de boosters en jeu. Les données sont ensuite centralisées de manière sécurisée via une architecture MySQL complexe, permettant aux joueurs de gérer leurs inventaires et de construire des decks tactiques depuis leur navigateur.                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">MySQL</span>
+                                    <span class="tag">PHP (LARAVEL)</span>
                                     <span class="tag">HTML</span>
                                     <span class="tag">CSS</span>
+									<span class="tag">JS</span>
                                     <span class="tag">JavaScript</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Projet 2 -->
-                        <div class="project-card">
-                            <div class="project-image">
-                                <div class="project-placeholder">[Image du projet]</div>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">[Nom du projet 2]</h3>
-                                <p class="project-description">
-                                    [Description courte du projet, technologies utilisées, objectifs...]
-                                </p>
-                                <div class="project-tags">
-                                    <span class="tag">PHP</span>
-                                    <span class="tag">MySQL</span>
-                                    <span class="tag">Bootstrap</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Projet 3 -->
-                        <div class="project-card">
-                            <div class="project-image">
-                                <div class="project-placeholder">[Image du projet]</div>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">[Nom du projet 3]</h3>
-                                <p class="project-description">
-                                    [Description courte du projet, technologies utilisées, objectifs...]
-                                </p>
-                                <div class="project-tags">
-                                    <span class="tag">React</span>
-                                    <span class="tag">API</span>
-                                    <span class="tag">Node.js</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Projet 4 -->
-                        <div class="project-card">
-                            <div class="project-image">
-                                <div class="project-placeholder">[Image du projet]</div>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">[Nom du projet 4]</h3>
-                                <p class="project-description">
-                                    [Description courte du projet, technologies utilisées, objectifs...]
-                                </p>
-                                <div class="project-tags">
-                                    <span class="tag">Python</span>
-                                    <span class="tag">Django</span>
-                                    <span class="tag">PostgreSQL</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Projet 5 -->
-                        <div class="project-card">
-                            <div class="project-image">
-                                <div class="project-placeholder">[Image du projet]</div>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title">[Nom du projet 5]</h3>
-                                <p class="project-description">
-                                    [Description courte du projet, technologies utilisées, objectifs...]
-                                </p>
-                                <div class="project-tags">
-                                    <span class="tag">C#</span>
-                                    <span class="tag">.NET</span>
-                                    <span class="tag">WPF</span>
+									<span class="tag">Java</span>
+									<span class="tag">API REST</span>
                                 </div>
                             </div>
                         </div>
@@ -391,12 +378,10 @@
         </div>
     </section>
 
-    <!-- Section Veille Technologique -->
     <section id="veille" class="section">
         <div class="container">
             <h2 class="section-title">Veille Technologique</h2>
             <div class="veille-grid">
-                <!-- Article à remplir -->
                 <div class="veille-card">
                     <div class="veille-header">
                         <h3 class="veille-title">[Titre de l'article]</h3>
@@ -418,13 +403,11 @@
         </div>
     </section>
 
-    <!-- Section Épreuves -->
     <section id="epreuves" class="section section-dark">
         <div class="container">
             <h2 class="section-title">Épreuves E4 & E5 – BTS SIO option SLAM</h2>
             
             <div class="epreuves-container">
-                <!-- Épreuve E4 -->
                 <div class="epreuve-card">
                     <div class="epreuve-header">
                         <h3 class="epreuve-title">Épreuve E4 – Épreuve orale (40 minutes)</h3>
@@ -455,7 +438,6 @@
                     </div>
                 </div>
 
-                <!-- Épreuve E5 -->
                 <div class="epreuve-card">
                     <div class="epreuve-header">
                         <h3 class="epreuve-title">Épreuve E5 – Épreuve pratique et orale (40 minutes)</h3>
@@ -489,7 +471,6 @@
         </div>
     </section>
 
-    <!-- Section Contact -->
     <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title">Contact</h2>
@@ -528,7 +509,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2026 THORR Stéphane. Tous droits réservés.</p>
